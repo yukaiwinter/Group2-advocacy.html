@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintain proper screentime</title>
+
+<!--Sajol, Perez, Ponce, Santiago-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+      img {
+          display: block;
+         margin-left: auto;
+         margin-right: auto;
+        }
+
+      .hotdog { 
+        margin-top: 10px;
+        margin-left:  60px;
+        margin-right:10px;
+        margin-bottom: 10px;
+      } 
+      
+      .cheesedog { 
+        margin-top: 40px;
+        margin-left: 60px;
+        margin-right: 10px;
+        margin-bottom: 40px;
+      } 
+      
+      p {font-size: 20px;} 
+
+      li {font-size: 20px;} 
+
+      h2  {font-size: 30px;} 
+
+      .shalala  {font-family:helvetica;} 
+
+      .kaboom  {
+        font-family:"Roboto", sans-serif;
+        color:rgb(176, 121, 3);
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+      } 
+
+      .kaboom2  {
+        font-family:"Roboto", sans-serif;
+        color:rgb(127, 83, 21);
+        text-align: center;
+        font-size: 70px;
+        font-weight: 700;
+      } 
+      h4  {font-size: 30px;}
+      </style>
+
+
+
+
+<body style="background-color:rgb(247, 219, 162);margin: 10px;">
+
+  <style>
+  
+
+     .image-container {
+       position: relative;
+       width: 100%;
+       height: 300px;
+       background-image: url('https://news.usc.edu/wp-content/uploads/2018/07/Teen-ADHD-cell-use-web.jpg');
+       background-size: cover;
+       background-position: center;
+       opacity: 0.8;
+     }
+  
+     .image-container::before {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(0, 51, 102, 0.5);
+       z-index: 1; 
+     }
+
+
+
+
+     .image-mia {
+       position: relative;
+       width: 100%;
+       height: 180px;
+       background-size: cover;
+       background-position: center;
+       opacity: 0.8;
+     }
+  
+     .image-mia::before {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgb(128, 91, 12);
+       z-index: 1; 
+     }
+
+     .image-kim {
+       position: relative;
+       width: 100%;
+       height: 180px;
+       background-size: cover;
+       background-position: center;
+       opacity: 0.8;
+     }
+  
+     .image-kim::before {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgb(128, 91, 12);
+       z-index: 1; 
+     }
+
+
+     .overlay {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       color: white;
+       font-size: 20px;
+       font-family: "Roboto", sans-serif;
+       font-weight: 700;
+       text-align: center;
+       z-index: 2; 
+     }
+
+     .overlay2 {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       color: white;
+       font-size: 30px;
+       font-family: "Roboto", sans-serif;
+       font-weight: 700;
+       text-align: center;
+       z-index: 2; 
+     }
+
+
+     .image-ysa {
+       position: relative;
+       width: 100%;
+       height: 180px;
+       background-size: cover;
+       background-position: center;
+       opacity: 0.8;
+     }
+  
+     .image-ysa::before {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgb(128, 91, 12);
+       z-index: 1; 
+     }
+
+     
+     .image-precious {
+       position: relative;
+       width: 100%;
+       height: 180px;
+       background-size: cover;
+       background-position: center;
+       opacity: 0.8;
+     }
+  
+     .image-precious::before {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgb(255, 255, 255);
+       z-index: 1; 
+     }
+
+
+     .overlay3 {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       color: rgb(154, 91, 9);
+       font-size: 5px;
+       font-family: "Roboto", sans-serif;
+       font-weight: 500;
+       text-align: center;
+       z-index: 2; 
+     }
+
+     nav {
+			 background-color: rgb(248, 248, 248);
+			 text-align: center;
+			 padding: 40px 0; }
+
+      nav a:hover {
+        background-color: rgb(255, 194, 53); }
+
+        nav a {
+			  color: rgb(138, 97, 0);
+			  text-decoration: none;
+			  padding: 20px 40px;
+			  margin: 0 15px;
+			  font-size: 18px; 
+        font-family: "Roboto", sans-serif; }
+
+  </style>
+
+<!--Sajol-->
+<!--Header-->
+    <div class="image-container">
+        <div class="overlay2">Unplug to Thrive: Empowering Students to Maintain Proper Screen Time</div>
+      </div>
+   </style>
+
+<!--Perez-->
+<!--Navigation-->
+   <nav>
+    <a href="halala.html">Video</a>
+    <a href="#Importance">Importance</a>
+    <a href="#Causes">Causes</a>
+    <a href="#Signs and Negative Effects">Signs and Negative Effects</a>
+    <a href="#Ways to Reduce">Ways to Reduce</a>
+    <a href="#ContactUS">Contact Us</a>
+   </nav>
+
+   </head>
+
+<!--Perez, Ponce, Ragudos, Santiago-->
+<div class="shalala">  
+        
+   <div class="cheesedog"> 
+    <div class="kaboom2">
+      <h2>Do you belong to the group of "THE DENIERS?"</h2>
+    </div> 
+   <h3>Those whose lives "aren't controlled by social media" but gets undoubtedly anxious when unable to access network? Well, you might not have proper management on your screentime, then this might be for you my fellow student/s!</h3>
+   </div>
+
+   <section id="Importance">
+   <div class="hotdog"> 
+      <div class="kaboom">
+      <h3> <u>Why maintaining proper screentime is important</u></h3>
+      </div>
+    <p>Prolonged screen time can lead to issues like eye strain, headaches, and disrupted sleep. For children and adolescents, it can hinder cognitive and social development, affecting concentration, problem-solving, and creativity. </p>
+    <p>The good news? Reducing screen time can help you:</p>
+    <ul><li>Boost Productivity: Reclaim focus with regular breaks.</li>
+    <li>Enhance Well-being: Improve sleep, reduce stress, and feel more energized.</li>
+    <li>Clear Mental Clarity: Boost creativity and decision-making</li></ul>
+    </div>
+
+  </style>
+
+    <section id="Causes">
+      <div class="image-kim">
+        <div class="overlay2"><i>Factors Contributing Excessive Screentime </i></div>
+      </div>
+
+<!--Ramirez, Ramos-->
+      <div class="hotdog">  
+    <ul>
+          <li>
+           <b>Educational Demands</b>
+            <p>Online classes, assignments, research, and digital learning tools require students to spend significant time on screens.</p>
+          </li>
+          <li>
+            <b>Entertainment and Social Media</b>
+            <p>Platforms like YouTube, TikTok, Instagram, and online gaming are major attractions, offering instant gratification and endless content.</p>
+          </li>
+          <li>
+            <b>Social Connection</b>
+            <p>Students use screens to maintain social relationships through messaging apps, video calls, and social media, especially post-pandemic.</p>
+          </li>
+          <li>
+            <b>Lack of Awareness</b>
+            <p>Many students may not realize the impact of excessive screen time on their health and well-being.</p>
+          </li>
+          <li>
+            <b>Convenience and Habit</b>
+            <p>Screens offer easy access to information and activities, making them an integral part of daily life, often leading to habitual overuse.</p>
+          </li>
+          <li>
+            <b>Boredom</b>
+         <p> The lack of engaging offline activities leads to screen time as a default.</p>
+          </li>
+          <li>
+          <b>Fear of Missing Out (FOMO) </b>
+          <p>The urge to stay updated on social media and online trends.</p>
+           </li>
+          <li>
+          <b>Information Seeking</b>
+           <p>Students use screens to maintain social relationships through messaging apps, video calls, and social media, especially post-pandemic.</p>
+          </li>
+           <li>
+          <b>Lack of Awareness</b>
+           <p>Many students may not realize the impact of excessive screen time on their health and well-being.</p>
+          </li>
+          <li>
+          <b>Convenience and Habit</b>
+          <p>Screens offer easy access to information and activities, making them an integral part of daily life, often leading to habitual overuse.</p>
+           </li>
+      </ul>
+    </section>
+
+
+<!--Ponce, Ragudos-->
+   <section id="Signs and Negative Effects">
+   <div class="image-mia">
+       <div class="overlay"><i>According to studies, about 62.6% of Filipino adolescence suffer from phone addiction in this day and age. Ever wonder if you are part of this percentage? Here are the following signs of being addicted to your devices. </i></div>
+     </div>
+  </style>
+    
+  <div class="hotdog">  
+  <p><li>Sudden urges to reach or use your mobile phones and other devices: using our phones can easily become a unstoppable habit, especially when almost all of our lives revolve around the use of our mobile device.</li>
+    <br>
+    <li>Less social interaction with people in real life: Chatting and messaging people is certainly much more efficient I'm terms of human communication, leading most to neglect having any interactions with people at all.</li>
+    <br>
+    <li>A considerable change in sleep schedule: Using our phones before sleeping are one of the main reasons why most of us continue to stay awake far longer than recommended, resulting in reduced quality of sleep.</li>
+    <br>
+    <li>Neglecting responsibilities for a long period of time: Games and apps in our devices can entertain people for hours on end. Thus, it can contribute to holding up responsibilities, chores and schoolwork that are needed to be accomplished.</li>
+    <br>
+    <li>Eye Strain (Digital Eye Strain): Prolonged screen exposure can cause discomfort, dry eyes, blurred vision, and headaches, often referred to as "computer vision syndrome."</li>
+    <br>
+    <li>Neck, Back, and Shoulder Pain: Sitting for long periods while using screens can result in poor posture and musculoskeletal problems like back pain, neck stiffness, and shoulder strain.</li>
+    <br>
+    <li>Increased Anxiety and Depression: Excessive use of social media and digital gadgets has been linked to higher levels of stress, anxiety, and depression, partly due to social comparisons and online bullying.</li>
+    <br>
+    <li>Obesity and Malnutrition: Sedentary behavior associated with screen use can contribute to weight gain or weight loss, as it often leads to less physical activity. </li></ul></p>
+    </div>
+
+
+  </style>
+
+
+<!--Perez, Ponce, Ragudos-->
+<div class="image-ysa">
+    <div class="overlay2";><i>Negative effects of Excessive Screentime</i></div>
+  </div>
+</style>
+
+
+<div class="hotdog"> 
+      <p><ul><li><i>Digital Eye Strain </i>(also known as computer vision syndrome) is common, causing symptoms like dry eyes, blurred vision, headaches, and neck or shoulder pain due to staring at screens for extended periods.</li>
+      <br>
+      <li><i>Blue Light Exposure:</i> Screens emit blue light, which can interfere with the production of melatonin, a hormone that regulates sleep. This can make it harder to fall asleep, especially if using screens late at night.</li>
+      <br>
+      <li><i>Tech Neck:</i> Constantly looking down at smartphones or slouching while using computers can lead to poor posture and long-term neck, back, and shoulder pain.</li>
+      <br>
+      <li><i>Increased Stress and Anxiety:</i> Constant screen time, especially on social media, can lead to feelings of inadequacy, comparison, or anxiety.</li>
+      <br>
+      <li><i>Reduced Attention Span:</i> Prolonged exposure to the fast-paced, often shallow content on screens can impair concentration and the ability to focus on more demanding tasks.</li>
+      <br>
+      <li><i>Reduced Physical Activity:</i> Excessive screen time often leads to sedentary behavior, increasing the risk of obesity, cardiovascular problems, and a decrease in overall fitness.</li>
+      <br>
+      <li><i>Addiction and Dependency:</i>
+      Prolonged use of gadgets, especially smartphones, can lead to unhealthy dependencies or even addiction, where individuals feel compelled to check their devices constantly, impacting productivity and relationships.</li>
+      <br>
+      <li><i>Cognitive Impact on Children:</i>
+      For children, excessive screen time can hinder cognitive development, affect social skills, and lead to behavioral problems. It may also impact their academic performance.</li>
+      <br>
+      <li><i>Social Isolation:</i>
+      Excessive screen use, particularly on social media, can cause individuals to withdraw from real-life interactions, leading to loneliness and social isolation.</li></ul></p> 
+    </style>
+
+  </div>
+
+<!--Perez-->
+  <section id="Ways to Reduce">
+  <div class="hotdog">  
+      <div class="kaboom">
+      <h3><u>10 ways to Reduce your screen time </u> </h3>
+      </div>
+<p>1. <b>Set Clear Limits: </b> Establish daily or weekly screen time limits for recreational activities, and ensure students stick to them. You can use apps to track and enforce these limits.</p>
+
+
+<p>2.  <b>Encourage Outdoor Activities: </b> Promote physical activities like sports, cycling, or walking. Spending time outdoors reduces screen dependency and improves physical health.</p>
+
+<p>3. <b>Promote Hobby Development:</b> Encourage students to explore non-digital hobbies such as reading, painting, playing musical instruments, or crafting.</p>
+
+<p>4. <b>Create Screen-Free Zones:</b> Designate certain areas of the home (like the dining room or bedrooms) as screen-free zones to encourage face-to-face interaction and focus on offline activities.</p>
+
+<p>5. <b>Use Tech for Educational Purposes Only:</b> Limit screen time to educational content, and use digital devices as tools for learning, not for entertainment.</p>
+
+<p>6. <b>Schedule Screen Breaks:</b> Encourage regular breaks (every 30 minutes) from screens during study time to reduce eye strain and prevent overuse.</p>
+
+<p>7. <b>Lead by Example:</b> Parents and teachers should model healthy screen habits. When students see adults balancing screen time with other activities, they are more likely to follow suit.</p>
+
+<p>8. <b>Set Time for Family Interaction:</b> Plan family activities that don’t involve screens, such as board games, cooking together, or having meaningful conversations.</p>
+
+<p>9. <b>Promote Social Interaction Offline:</b> Encourage students to spend time with friends and peers in person, like meeting for sports or study groups, rather than engaging in online socializing.</p>
+
+<p>10. <b>Limit Screen Use Before Bedtime:</b> Avoid screens at least an hour before bed to help students wind down and improve their sleep quality. Encourage reading or other relaxing activities instead. </p>
+  </div>
+
+  <style> 
+  .imganimated-gif{
+    width: 900px;
+    height: auto; 
+    display: block;}
+  </style>
+
+  <img src="https://i.pinimg.com/originals/16/03/59/16035950e52028dc2f7addb810d9b819.gif" class="imganimated-gif" alt="puyat">
+  
+  
+
+  <section id="ContactUS">
+    <div class="image-precious">
+    <div class="overlay3">
+    <p><b>Contact us:</b></p>
+    <p> Email Adress: tof@ToFinderz.net</p> 
+    <p> Contact No.:(+29) 9995583944</p>
+    <p> Address: #79 Topazians St. Topianz City</p>
+   </div>
+  </div>
+
+
+</div>
+</body>
+
+
+</html>
